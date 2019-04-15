@@ -11,7 +11,11 @@ theme_build_source: https://github.com/NAPS-emergency-response-project/emergency
 
 theme_build_imagestream: redhat-sso73-openshift
 theme_build_imagestream_tag: 1.0
-theme_build_imagestream_namespace: openshift
+
+sso_imagestream_template: "{{ resources_dir }}/sso-imagestream.yml.j2"
+sso_imagestream_tags:
+- { name: '1.0', image: 'registry.access.redhat.com/redhat-sso-7/sso73-openshift:1.0' }
+- { name: 'latest', image: 'registry.access.redhat.com/redhat-sso-7/sso73-openshift:1.0' }
 
 sso_application_name: sso
 sso_template: "{{ resources_dir}}/sso73-x509-postgresql-persistent.yml"

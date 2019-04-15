@@ -23,7 +23,6 @@ spec:
       from:
         kind: ImageStreamTag
         name: '{{ theme_build_imagestream }}:{{ theme_build_imagestream_tag }}'
-        namespace: {{ theme_build_imagestream_namespace }}
     type: Source
   successfulBuildsHistoryLimit: 5
   triggers:
