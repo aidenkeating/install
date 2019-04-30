@@ -65,7 +65,7 @@ items:
             name: http
           resources:
             limits:
-              cpu: 100m
+              cpu: 500m
               memory: 200Mi
             requests:
               cpu: 50m
